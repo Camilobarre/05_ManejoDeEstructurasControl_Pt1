@@ -81,7 +81,7 @@ console.groupEnd();
 console.groupCollapsed("Ejercicio 9");
 // Ejercicio 9
 let numeroEjercicio9 = prompt("Ingresa número para verificar si están en el rango de 20 a 50:")
-if (numeroEjercicio9 >= 20 && numeroEjercicio9<= 50) {
+if (numeroEjercicio9 >= 20 && numeroEjercicio9 <= 50) {
     console.info("El número se encuentra en el rango");
 } else {
     console.info("El número no se encuentra en el rango");
@@ -91,7 +91,7 @@ console.groupEnd();
 console.groupCollapsed("Ejercicio 10");
 // Ejercicio 10
 let numeroEjercicio10 = prompt("Ingresa número para determinar si es igual a 0:")
-if (numeroEjercicio10 ===0) {
+if (numeroEjercicio10 === 0) {
     console.info("El número es igual a 0");
 } else {
     console.info("El número no es igual a 0");
@@ -101,7 +101,7 @@ console.groupEnd();
 console.groupCollapsed("Ejercicio 11");
 // Ejercicio 11
 let numeroEjercicio11 = prompt("Ingresa número para verificar si están en el rango de -10 a 10:")
-if (numeroEjercicio11 >= -10 && numeroEjercicio11<= 10) {
+if (numeroEjercicio11 >= -10 && numeroEjercicio11 <= 10) {
     console.info("El número se encuentra en el rango");
 } else {
     console.info("El número no se encuentra en el rango");
@@ -121,7 +121,7 @@ console.groupEnd();
 console.groupCollapsed("Ejercicio 13");
 // Ejercicio 13
 let numeroEjercicio13 = prompt("Ingresa tu edad para verificar si eres mayor:")
-if (numeroEjercicio13 >=18) {
+if (numeroEjercicio13 >= 18) {
     console.info("Eres mayor de edad")
 } else {
     console.info("No eres mayor de edad")
@@ -135,7 +135,7 @@ console.groupEnd();
 
 console.groupCollapsed("Ejercicio 15");
 // Ejercicio 15
-let numeroEjercicio15 =prompt("Ingresa un número para verificar si es cuadrado perfecto:")
+let numeroEjercicio15 = prompt("Ingresa un número para verificar si es cuadrado perfecto:")
 if (numeroEjercicio15 === 0) {
     console.info("Caso especial donde 0 es cuadrado perfecto")
 }
@@ -150,22 +150,67 @@ console.groupEnd();
 
 console.groupCollapsed("Ejercicio 16");
 // Ejercicio 16
+let numeroEjercicio16 = prompt("Ingresa un número para verificar si un número de Fibonacci:")
+if (numeroEjercicio16 === 0 || numeroEjercicio16 === 1) {
+    console.info("Caso especial donde 0 y 1 son número de Fibonacci")
+}
+let fibonacci1 = 0;
+let fibonacci2 = 1;
+while (fibonacci1 + fibonacci2 <= numeroEjercicio16) {
+    let fibonacciActual = fibonacci1 + fibonacci2;
+    if (fibActual === numero) {
+        console.info("Es un número de Fibonacci")
+    }
+    fibonacci1 = fibonacci2;
+    fibonacci2 = fibonacciActual;
+}
+console.info("No es un número de Fibonacci")
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 17");
 // Ejercicio 17
+let numeroEjercicio17 = prompt("Ingresa número para verificar si es potencia de 2:")
+if ((Math.log2(numeroEjercicio17)).isInteger) {
+    console.info("El número es potencia de 2")
+} else {
+    console.info("El número no es potencia de 2")
+}
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 18");
 // Ejercicio 18
+let numeroEjercicio18 = prompt("Ingresa un número para verificar si es palíndromo:")
+let numeroString = numeroEjercicio18.toString();
+let i = 0;
+let j = numeroString.length - 1;
+while (i < j) {
+    if (numeroString[i] !== numeroString[j]) {
+        return console.info("El número no es un palíndromo");
+    }
+    i++;
+    j--;
+}
+return console.info("El número es un palíndromo");
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 19");
 // Ejercicio 19
+let textoEjercicio19 = prompt("Ingresa una cadena para verificar si se incluye la palabra JavaScript:")
+if (textoEjercicio19.includes("JavaScript")) {
+    console.log("La cadena contiene'JavaScript'.");
+} else {
+    console.log("La cadena no contiene 'JavaScript'.");
+}
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 20");
 // Ejercicio 20
+let textoEjercicio20 = prompt("Ingresa una cadena para verificar si tiene más de 10 caracteres:")
+if (textoEjercicio20.length > 10) {
+    console.log("La cadena tiene más de 10 caracteres.");
+} else {
+    console.log("La cadena no tiene más de 10 caracteres.");
+}
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 21");
